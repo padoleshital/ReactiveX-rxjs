@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlunkComponent } from './plunk.component';
+import { IntervalComponent } from './interval.component';
 
-describe('PlunkComponent', () => {
-  let component: PlunkComponent;
-  let fixture: ComponentFixture<PlunkComponent>;
+describe('IntervalComponent', () => {
+  let component: IntervalComponent;
+  let fixture: ComponentFixture<IntervalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlunkComponent ]
+      declarations: [ IntervalComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PlunkComponent);
+    fixture = TestBed.createComponent(IntervalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

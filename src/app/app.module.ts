@@ -7,14 +7,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from 'src/shared/header/header.component';
 import { FooterComponent } from 'src/shared/footer/footer.component';
 import { PromisesComponent } from './promises/promises.component';
-import { MapComponent } from './map/map.component';
-import { FilterComponent } from './filter/filter.component';
-import { PlunkComponent } from './plunk/plunk.component';
-import { FromComponent } from './from/from.component';
+import { MapComponent } from './observables/map/map.component';
 import { ObservablesComponent } from './observables/observables.component';
-
-
-
+import { ListComponent } from './observables/list/list.component';
+import { FromEventComponent } from './observables/from-event/from-event.component';
+import { IntervalComponent } from './observables/interval/interval.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +19,12 @@ import { ObservablesComponent } from './observables/observables.component';
     FooterComponent,
     HeaderComponent,
     PromisesComponent,
-    MapComponent,
-    FilterComponent,
-    PlunkComponent,
-    FromComponent,
-    ObservablesComponent
+    MapComponent,    
+    ObservablesComponent,
+  
+    ListComponent,
+       FromEventComponent,
+       IntervalComponent
   ],
   imports: [
     BrowserModule,

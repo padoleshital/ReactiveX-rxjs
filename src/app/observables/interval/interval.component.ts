@@ -12,9 +12,9 @@ export class IntervalComponent implements OnInit {
   videoSubscription:Subscription = new Subscription();
    constructor(private designUtility:DesignUtilityService) { }
     ngOnInit() {
-      // let broadCastVideos = interval(1000); //interval is a function that emits a sequence of numbers in a specified interval of time.
+       let broadCastVideos = interval(1000); //interval is a function that emits a sequence of numbers in a specified interval of time.
 
-      let broadCastVideos = timer(1000,6000);
+      // let broadCastVideos = timer(1000,6000);
 
       broadCastVideos.subscribe(res =>{
         console.log(res);
@@ -27,6 +27,13 @@ export class IntervalComponent implements OnInit {
         }
 
       })
+
+      //timer operator is used to emit values in a sequence after a specified time interval.
+      // this.broadCastVideos1().subscribe(res =>{
+      //   console.log(res);
+      //   this.obsMesg = 'Video' + res;
+      //   this.designUtility.elAppend(this.obsMesg,'elContainer3');
+      // })
 
     }
 

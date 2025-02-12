@@ -1,0 +1,53 @@
+<div class="my-3">
+    <h2>Of & From</h2>
+    <P>Creates an Observable from a set of values.</P>
+    <br>
+    <strong>Ex -01(OF)</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">          
+            <p class="bg-light py-2 px-3 border-rounded"><strong>Data ( Of Operator): </strong>'Shital','Manohar', 'padole'   </p>
+
+            <ul id="elContainer">
+                <!-- <li>Shital</li>
+                <li>Manohar</li>
+                <li>Padole</li> -->
+            </ul>
+        </div>
+
+        <div class="col-md-6">          
+            <p class="bg-light py-2 px-3 border-rounded"><strong>Data ( Of Operator): </strong>a:'Shital',b:'Manohar', c:'padole' </p>
+
+            <ul >
+                <li><strong>a : </strong>{{ObsMesg.a}}</li>
+                <li><strong>b : </strong>{{ObsMesg.b}}</li>
+                <li><strong>c : </strong>{{ObsMesg.c}}</li>
+            </ul>
+        </div>
+       
+    </div>
+
+
+    <P>Using Form Operator Converting promise to observable, String to Observable , Array to Observable String</P>
+    <br>
+    <strong>Ex -02(From)</strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Array</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border-rounded"><strong>Data ( From Operator):(['Shital','Manohar', 'padole' ]) </strong>Convert Array to Observable</p>
+            <ul id="elConatiner4"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <p class="bg-light py-2 px-3 border-rounded"><strong>Data (from Operator): </strong>Convert Promise to Observable </p>
+            <ul id="elContainer5"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <p class="bg-light py-2 px-3 border-rounded"><strong>Data ( Of Operator): </strong>Convert String to Observable </p>
+            <ul id="elContainer6"></ul>
+        </div>
+    </div>

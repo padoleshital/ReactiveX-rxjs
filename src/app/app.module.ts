@@ -13,6 +13,7 @@ import { ListComponent } from './observables/list/list.component';
 import { FromEventComponent } from './observables/from-event/from-event.component';
 import { IntervalComponent } from './observables/interval/interval.component';
 import { OffromComponent } from './observables/offrom/offrom.component';
+import { ToArrayComponent } from './observables/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OffromComponent } from './observables/offrom/offrom.component';
     ListComponent,
        FromEventComponent,
        IntervalComponent,
-       OffromComponent
+       OffromComponent,
+       ToArrayComponent
   ],
   imports: [
     BrowserModule,

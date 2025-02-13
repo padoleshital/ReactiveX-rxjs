@@ -12,6 +12,7 @@ import { FromEventComponent } from './observables/from-event/from-event.componen
 import { IntervalComponent } from './observables/interval/interval.component';
 import { OffromComponent } from './observables/offrom/offrom.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
+import { CustomObservableComponent } from './observables/custom-observable/custom-observable.component';
 const routes: Routes = [
   {
     path:'',
@@ -49,6 +50,10 @@ const routes: Routes = [
       {
         path: 'to-array',
         component: ToArrayComponent
+      },
+      {
+        path: 'custom-observable',
+        component: CustomObservableComponent
       }
     ]
   }, 

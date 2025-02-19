@@ -1,0 +1,68 @@
+<div class="my-3">
+    Filter
+    <br/>
+    <p> where you not only want to filter values but also transform map or filter</p>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex-01</strong>
+            <hr/>  
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Filter :</strong>By Length 
+            </p> 
+            <table class="table" >  
+                      
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let data of data">                   
+                   <td>{{data.id}}</td>                
+                   <td>{{data.name}}</td>                   
+                   <td>{{data.gender}}</td>                  
+                </tr>
+              
+            </table>         
+        </div>
+        <div class="col-md-4">
+            <strong>Ex-02</strong>
+            <hr/>  
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Filter :</strong>By Gender
+            </p> 
+            <table class="table">
+                <tr>
+                    <tr>
+                        <th>Id:</th>
+                        <th>Name:</th>
+                        <th>Gender</th>
+                    </tr>
+              
+                <tr *ngFor="let item of data2">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.gender}}</td>
+                </tr>
+            </table>   
+        </div>
+        <div class="col-md-4">
+            <strong>Ex-03</strong>
+            <hr/>  
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Filter :</strong>By Id
+            </p> 
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>            
+                <tr *ngFor="let item of data3">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                </tr>
+            </table>   
+        </div>
+    </div>
+</div>

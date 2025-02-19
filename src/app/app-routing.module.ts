@@ -13,6 +13,9 @@ import { IntervalComponent } from './observables/interval/interval.component';
 import { OffromComponent } from './observables/offrom/offrom.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
 import { CustomObservableComponent } from './observables/custom-observable/custom-observable.component';
+import { PluckComponent } from './observables/pluck/pluck.component';
+import { FilterComponent } from './observables/filter/filter.component';
+import { TapComponent } from './observables/tap/tap.component';
 const routes: Routes = [
   {
     path:'',
@@ -54,6 +57,18 @@ const routes: Routes = [
       {
         path: 'custom-observable',
         component: CustomObservableComponent
+      },
+      {
+        path:'pluck',
+        component:PluckComponent
+      },
+      {
+        path:'filter',
+        component:FilterComponent
+      },
+      {
+        path:'tap',
+        component:TapComponent
       }
     ]
   }, 

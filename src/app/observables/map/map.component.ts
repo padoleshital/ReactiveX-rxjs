@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { from, interval, map, Subscription } from 'rxjs';
+import { DesignUtilityService } from 'src/app/appServices/design-utility.service';
 
 @Component({
   selector: 'app-map',
@@ -15,7 +16,7 @@ export class MapComponent implements OnInit{
   msg1:any;
   msg2:any;
   msg3:any;
-  constructor(){}
+  constructor(private designUtility:DesignUtilityService){}
 
   ngOnInit() {
     const broadCastVideo = interval(1000)
@@ -62,6 +63,7 @@ export class MapComponent implements OnInit{
     map(data => data.name)
   ).subscribe(res =>{
     this.msg3 = res
+    this.designUtility.elAppend(res,'elContainer');
   })
 
   

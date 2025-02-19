@@ -15,6 +15,9 @@ import { IntervalComponent } from './observables/interval/interval.component';
 import { OffromComponent } from './observables/offrom/offrom.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
 import { CustomObservableComponent } from './observables/custom-observable/custom-observable.component';
+import { PluckComponent } from './observables/pluck/pluck.component';
+import { FilterComponent } from './observables/filter/filter.component';
+import { TapComponent } from './observables/tap/tap.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import { CustomObservableComponent } from './observables/custom-observable/custo
        OffromComponent,
        ToArrayComponent,
        CustomObservableComponent,
+       PluckComponent,
+       FilterComponent,
+       TapComponent,
        
   ],
   imports: [

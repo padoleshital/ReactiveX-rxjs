@@ -1,2 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.list-group{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.list-group li { 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 13px;
+    margin-bottom: 10px;
+}
+
+ul.list-group1 li {    
+    border: 1px solid #d62525;
+    border-radius: 5px;
+    padding: 8px 13px;
+    margin-bottom: 10px;
+    
+}
+ul.list-group.error li {
+    background: #ff000017;
+    border-color: #d62525;
+    color: red;
+}
+ul.list-group.complete li {
+    color: green;
+    background: #00800012 ;
+    border-color: green;
+}

@@ -18,6 +18,7 @@ import { CustomObservableComponent } from './observables/custom-observable/custo
 import { PluckComponent } from './observables/pluck/pluck.component';
 import { FilterComponent } from './observables/filter/filter.component';
 import { TapComponent } from './observables/tap/tap.component';
+import { TakeComponent } from './take/take.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { TapComponent } from './observables/tap/tap.component';
        PluckComponent,
        FilterComponent,
        TapComponent,
+       TakeComponent,
        
   ],
   imports: [
